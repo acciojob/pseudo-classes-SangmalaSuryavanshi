@@ -1,1 +1,53 @@
+:root {
+    --background-color: rgb(135, 206, 235);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+article p:first-child {
+    color: #fff; /* White text */
+    background-color: #000; /* Black background */
+    padding: 10px; /* Optional: padding for better readability */
+}
+
+article p:nth-child(2) {
+    color: #000; /* Standard text color (default) */
+}
+
+article p:last-child {
+    color: red; /* Red text */
+}
+
+ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 50%; /* Set width of the list */
+}
+
+li {
+    background-color: gray; /* Default background color */
+    padding: 10px; /* Padding for list items */
+    width: 100%; /* Ensure the list item fills the width of the ul */
+}
+
+li:nth-child(odd) {
+    background-color: white; /* White background for odd items */
+}
+
+li:first-child {
+    font-size: 22px; /* Font size for the first item */
+}
+
+li:last-child {
+    font-size: 22px; /* Font size for the last item */
+}
+
+li:nth-last-child(3) {
+    background-color: pink; /* Pink background for the third-to-last item */
+}
 /*  your css code here. If applicable */
